@@ -1,7 +1,7 @@
 title: Chris Hasz
 email: chrishasz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Product documentation for end users and developers.
+  SAP SalesCloud engineering. Dad. Open source developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.chrishasz.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -24,6 +24,9 @@ header_pages:
   - name : glob2caml.md
     title : Glob2Caml
     url : /glob2caml
+  - name : yaght.md
+    title : yaght
+    url : /yaght
 
 # Blog Config
 show_excerpts: true
@@ -38,9 +41,9 @@ minima:
 
   # generate social links in footer
   social_links:
-    github:  jekyll
-    linkedin: jekyll
-    twitter: jekyllrb
+    github:  chrishasz
+    linkedin: chrishasz
+    twitter: chrishasz
     rss: rss
 
 #yaght
