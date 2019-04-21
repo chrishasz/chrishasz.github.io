@@ -1,0 +1,56 @@
+title: Chris Hasz
+email: chrishasz@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Product documentation for end users and developers.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.chrishasz.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+#Social [jekyll-seo-tag]
+social:
+  name: chrishasz
+  links:
+    - https://twitter.com/chrishasz
+    - https://www.linkedin.com/in/chrishasz
+    - https://github.com/chrishasz
+
+twitter:
+  username: chrishasz
+  card: summary
+
+header_pages:
+  - name : spgo.md
+    title : SPGo
+    url : /spgo
+  - name : glob2caml.md
+    title : Glob2Caml
+    url : /glob2caml
+
+# Blog Config
+show_excerpts: true
+
+#Google Analytis
+google_analytics: UA-138720538-1
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    github:  jekyll
+    linkedin: jekyll
+    twitter: jekyllrb
+    rss: rss
+
+#yaght
+yaght:
+  # gravatar-hash : 
+  avatar : /images/chris.jpg
+
+# Build settings
+markdown: kramdown
+remote_theme: chrishasz/yaght
+
+# plugins:
+#   - jekyll-feed
