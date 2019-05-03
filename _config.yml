@@ -1,10 +1,10 @@
 title: Chris Hasz
 email: chrishasz@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   SAP SalesCloud engineering. Dad. Open source developer.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://www.chrishasz.com" # the base hostname & protocol for your site, e.g. http://example.com
-
+logo: "/images/chris.jpg"
 #Social [jekyll-seo-tag]
 social:
   name: chrishasz
@@ -12,11 +12,11 @@ social:
     - https://twitter.com/chrishasz
     - https://www.linkedin.com/in/chrishasz
     - https://github.com/chrishasz
-
 twitter:
   username: chrishasz
   card: summary
 
+# Custom Navigation Links
 header_pages:
   - name : spgo.md
     title : SPGo
