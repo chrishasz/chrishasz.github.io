@@ -4,7 +4,7 @@ description: >-
   SAP SalesCloud engineering. Open source development.
 baseurl: ""
 url: "https://www.chrishasz.com" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/images/chris.jpg"
+favicon: /images/favicon.jpg
 #Social [jekyll-seo-tag]
 social:
   name: chrishasz
