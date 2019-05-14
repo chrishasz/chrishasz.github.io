@@ -27,7 +27,7 @@ header_pages:
     url : /glob2caml
   - name : yaght.md
     title : yaght
-    url : /yaght
+    url : https://github.com/chrishasz/yaght
 
 # Blog Config
 show_excerpts: true
