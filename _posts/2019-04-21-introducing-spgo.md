@@ -9,7 +9,7 @@ SPGo allows you and your team to develop SharePoint web solutions from your loca
 
 SPGo is available directly from VSCode (Search SPGo in the extension pane), or from the project page on the Visual Studio Marketplace.
 
-[Get the Extension](https://marketplace.visualstudio.com/items?itemName=SiteGo.spgo){:.button .medium target="_blank"}
+[Get the Extension](https://marketplace.visualstudio.com/items?itemName=SiteGo.spgo){:.button .medium .center target="_blank"}
 
 ## Goals
 
@@ -41,7 +41,7 @@ Because you work from your local file system, integration with your source contr
 
 #### Documentation
 
-You can find usage notes, tips, and tutorials on the [documentation site](https://www.chrishasz.com/spgo){:.button .medium target="_blank"}.
+You can find usage notes, tips, and tutorials on the [documentation site](https://www.chrishasz.com/spgo).
 
 ## What Else?
 
