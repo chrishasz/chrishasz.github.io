@@ -38,7 +38,7 @@
     <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
     <changefreq>{{ page.sitemap.changefreq | default: "monthly"  }}</changefreq>
-    <priority>{{ page.sitemap.priority }}</priority>
+    <priority>{{ page.sitemap.priority | default: "2.0" }}</priority>
   </url>
       {%- endunless -%}
     {%- endif -%}
