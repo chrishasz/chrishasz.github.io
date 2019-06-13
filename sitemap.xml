@@ -36,7 +36,7 @@
       {% unless page.url contains "feed.xml" %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
     <changefreq>{{ page.sitemap.changefreq | default: "monthly"  }}</changefreq>
     <priority>{{ page.sitemap.priority }}</priority>
   </url>
