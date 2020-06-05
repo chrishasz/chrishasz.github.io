@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+hideBreadcrumb: true
 sitemap:
       changefreq: weekly
       priority: "1.0"
