@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Steal My Idea: DevFunded"
-categories: [Steal My Idea, Open Source]
-tags: [Github, DevFunded, Payments]
+categories: [Business]
+tags: [Steal My Idea, Github, DevFunded, Payments, Open Source]
 ---
 
 The Enterprise world runs on open source software[1](#citation1){:.superscript}. It is possible for large organizations like the RedHat foundation to operate in a self-sufficient manner, and companies like [Facebook](https://www.facebook.com){:target="_blank"} can fund internal support for libraries like [React](https://reactjs.org){:target="_blank"}, but there are hundreds of thousands of free libraries (npm, alone, hosts over 995,000 packages[2](#citation2){:.superscript}) that are supported at no charge by independent developers[3](#citation3){:.superscript}.

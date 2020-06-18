@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Build SharePoint Web Solutions with the Power of Visual Studio Code"
-categories: [Technology, Open Source]
-tags: [SPGo, Github]
+categories: [Technology, Projects]
+tags: [SPGo, Github, Open Source]
 ---
 
 SPGo allows you and your team to develop SharePoint web solutions from your local PC using the power of Visual Studio Code. Now you can build and customize SharePoint sites source-control first with all of the power of a top-tier IDE.
