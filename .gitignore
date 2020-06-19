@@ -1,6 +1,8 @@
+# jekyll related files and folders
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-Gemfile.lock
+
+# vscode related folders
 .vscode/
