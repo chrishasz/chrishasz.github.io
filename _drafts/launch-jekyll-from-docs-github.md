@@ -39,7 +39,7 @@ what does Gemfile do
 
 ### Step 4: Generate the gemfile.lock
 
- `bundle install` - This will create the gemfile.lock file, which describes all of the dependencies needed to run this project. It is considered best practice to check this file into GitHub so that others
+ `bundle install` - This will create the gemfile.lock file, which describes all of the dependencies needed to run this project. It is considered best practice to check this file into GitHub so that others are able to build and run the site in an identical ruby environment.
 
 ### Step 5: Build and run the site Locally
 
@@ -135,12 +135,12 @@ remote_theme: chrishasz/yaght
    # frozen_string_literal: true
 
     Gem::Specification.new do |spec|
-        spec.name          = "spgo"
+        spec.name          = "<project_name>"
         spec.version       = "0.1.0"
-        spec.authors       = ["your name"]
+        spec.authors       = ["<your_name>"]
         spec.email         = ["<you>@<domain>.<tld>"]
 
-        spec.summary       = "<Project description"
+        spec.summary       = "<Project description>"
         spec.homepage      = "<url of site>"
         spec.license       = "MIT"
 

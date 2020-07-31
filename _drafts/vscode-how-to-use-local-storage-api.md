@@ -8,7 +8,7 @@ excerpt: "<p>The VSCode key-value storage is a powerful but under-documented API
 
 ## Problem Description
 
-> I want to store Workspace or global data in a durable that is accessible only to my extension.
+> I want to store Workspace or global data in durable storage, that is accessible only to my extension.
 
 using appdata is often locked down
 
@@ -18,9 +18,9 @@ no guarantee that you have permissions to the filesystem
 
 ## Solution
 
-### Step 1: Create the _config.yml file
+The [Memento](https://code.visualstudio.com/api/references/vscode-api#Memento) object.
 
-what does Config.yml do
+added in vsCode version xxxx
 
 ## Example: Creating a Generic Class to Read and Write
 
@@ -30,19 +30,47 @@ Here is a simple class for managing storing and retrieving
 
 ### Initialize localStorageService with Workspace Scope
 
-```typescript
-
-    //Initialize the global application manager
-    vscode.window.spgo = new AppManager(context.workspaceState);
-```
-
-### Initialize localStorageService with Addin Scope
+_in extension.ts_
 
 ```typescript
 export function activate(context: vscode.ExtensionContext): any {
 
-    //Initialize the global application manager
-    vscode.window.spgo = new AppManager(context.workspaceState);
+  //Create your objects - Needs to be a well-formed JSON object.
+  let someObject : ISomeObject = null;
+  let someOtherObject : ISomeObject = new SomeObject();
+
+  //Initialize the global application manager
+  let storageManager = new LocalStorageService(context.workspaceState);
+
+  //Write your objects from the Workspace Store
+  storageManager.setValue<ISomeObject>("SomeObject", someObject);
+
+  //Read your objects to the Workspace Store
+  someOtherObject = storageManager.getValue<ISomeObject>("SomeObject");
+
+}
+```
+
+### Initialize localStorageService with Addin Scope
+
+_in extension.ts_
+
+```typescript
+export function activate(context: vscode.ExtensionContext): any {
+
+  //Create your objects - Needs to be a well-formed JSON object.
+  let someObject : ISomeObject = null;
+  let someOtherObject : ISomeObject = new SomeObject();
+
+  //Initialize the global application manager
+  let storageManager = new LocalStorageService(context.workspaceState);
+
+  //Write your objects from the Workspace Store
+  storageManager.setValue<ISomeObject>("SomeObject", someObject);
+
+  //Read your objects to the Workspace Store
+  someOtherObject = storageManager.getValue<ISomeObject>("SomeObject");
+}
 ```
 
 ## Summary and Take-aways
