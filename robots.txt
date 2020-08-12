@@ -3,3 +3,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.chrishasz.com/sitemap.xml
+Sitemap: https://www.chrishasz.com/spgo/sitemap.xml
+Sitemap: https://www.chrishasz.com/yaght/sitemap.xml
