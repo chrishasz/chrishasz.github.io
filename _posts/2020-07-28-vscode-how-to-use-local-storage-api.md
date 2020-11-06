@@ -3,20 +3,20 @@ layout: post
 title: "How to use the VSCode local storage API"
 categories: [Projects, Technology]
 tags: [Typescript, VSCode, VSCode Extension]
-excerpt: "<p>The VSCode key-value storage is a powerful but under-documented API. Learn how to use it to store project or extension-wide data.</p>"
+excerpt: "<p>The VSCode key-value storage is a powerful but under-documented API. I will show you how to use this feature to store project or extension-wide data.</p>"
 ---
 
 ## Problem Description
 
-> I want to store Workspace or global data in durable storage, that is accessible only to my extension.
+> I want to read and write Workspace or global data to a durable storage, that is accessible only to my extension.
 
-This was not always as straight-forward as it is now. In the past I've implemented local storage using custom files written to temporary storage such as %APP_DATA%. There are three problems with this approach.
+This was not always as straight-forward as it is now. In the past you would need to implement local storage using custom files written to temporary storage such as %APP_DATA%. There are three problems with this approach.
 
 1. Using %APP_DATA% is often locked down.
 2. Files stored in %APP_DATA% can be deleted at any time (sometimes nightly) by IT policy.
 3. There is no guarantee that you have, or will continue to have, permissions to the filesystem.
 
-This once caused an interesting [bug](https://github.com/chrishasz/spgo/issues/71){:target="_blank"} in my extension.
+This can cause inconsistency [issues](https://github.com/chrishasz/spgo/issues/71){:target="_blank"} in how extensions behave.
 
 ## Solution
 
@@ -26,7 +26,7 @@ According to the documentation, `A memento represents a storage utility. It can 
 
 When you activate an extension, VSCode passes an `ExtensionContext` object to your `activate` function. This object contains two `Memento` objects - a `workspaceState` property, which stores objects at the Workspace scope, and the `globalState` property, which stores objects at the Extension scope.
 
-## Example: Creating a Generic Class to Read and Write
+## Example: Creating a Generic Class to Read and Write Data to the Local Store
 
 You can create a simple class for storing and retrieving data from the `ExtensionContext` by wrapping either of the State objects in a class. By wrapping the State object in a class, you can implement extension-specific custom formatters, or encrypting/hashing data.
 
@@ -34,7 +34,7 @@ You can create a simple class for storing and retrieving data from the `Extensio
 
 Once you have created this class, you can use it to write data to and from the local storage object, scoped to either the *Workspace* or the *Extension*.
 
-#### Initialize localStorageService with Workspace Scope
+### Initialize localStorageService with Workspace Scope
 
 *in file: _extension.ts_
 
@@ -57,7 +57,7 @@ export function activate(context: vscode.ExtensionContext): any {
 }
 ```
 
-#### Initialize localStorageService with Extension Scope
+### Initialize localStorageService with Extension Scope
 
 *in file: _extension.ts_
 
@@ -88,5 +88,5 @@ If you wrap it in a simple helper class, you can implement custom data or securi
 ## References
 
 * [VSCode Documentation](https://code.visualstudio.com/docs){:target="_blank"} - Documentation for Visual Studio Code.
-* [Memento Class](https://code.visualstudio.com/api/references/vscode-api#Memento){:target="_blank"} - The VSCode Docs for the Memento Class.
+* [Memento Class](https://code.visualstudio.com/api/references/vscode-api#Memento){:target="_blank"} - The Visual Studio Code Docs for the Memento Class.
 * [chrishasz on GitHub](https://www.github.com/chrishasz){:target="_blank"} - My personal github site where the gists are hosted
