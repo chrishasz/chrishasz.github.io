@@ -36,8 +36,8 @@ header_pages:
 # Blog Config
 show_excerpts: true
 permalink: "/blog/:year/:month/:day/:title/"
-# paginate: 5
-# paginate_path: "/blog/page:num/"
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 #Google Analytics
 google_analytics: UA-138720538-1
