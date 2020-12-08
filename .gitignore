@@ -6,3 +6,6 @@ _site/
 
 # vscode related folders
 .vscode/
+
+#Ruby
+Gemfile.lock
