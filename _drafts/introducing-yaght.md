@@ -5,7 +5,7 @@ categories: [Technology, Projects]
 tags: [Jekyll, VSCode, GitHub Themes, yaght]
 ---
 
-Yet another Github Template (yaght) is a GitHub-friendly personal Jekyll theme for developers. It is based on the default minima theme.
+Yet another Github Template (yaght) is a GitHub-friendly personal Jekyll theme for developers. It is based on the default minima theme and it powers this website. You can demo it [here](https://www.chrishasz.com/yaght-demo/).
 
 ## Goals
 
@@ -17,7 +17,14 @@ I built yaght with a goal of simplifying the process of getting a personal site 
 
 ### GITHUB PROJECT INTEGRATION
 
+The project template will show github widgets:
+ 1. Link to Code
+ 2. Link to Issues
+ 3. Link to Latest Release
+
 ### ENHANCED BLOGGING WITH CATEGORIES AND TAGS
+
+
 
 ### INTEGRATED SEO COMPONENTS
 
