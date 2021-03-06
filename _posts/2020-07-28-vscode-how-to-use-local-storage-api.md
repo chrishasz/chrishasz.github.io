@@ -42,8 +42,8 @@ Once you have created this class, you can use it to write data to and from the l
 export function activate(context: vscode.ExtensionContext): any {
 
   //Create your objects - Needs to be a well-formed JSON object.
-  let someObject : ISomeObject = null;
-  let someOtherObject : ISomeObject = new SomeObject();
+  let someObject : ISomeObject = new SomeObject();
+  let someOtherObject : ISomeObject = null;
 
   //Initialize the global application manager
   let storageManager = new LocalStorageService(context.workspaceState);
@@ -65,8 +65,8 @@ export function activate(context: vscode.ExtensionContext): any {
 export function activate(context: vscode.ExtensionContext): any {
 
   //Create your objects - Needs to be a well-formed JSON object.
-  let someObject : ISomeObject = null;
-  let someOtherObject : ISomeObject = new SomeObject();
+  let someObject : ISomeObject = new SomeObject();
+  let someOtherObject : ISomeObject = null;
 
   //Initialize the global application manager
   let storageManager = new LocalStorageService(context.globalState);
