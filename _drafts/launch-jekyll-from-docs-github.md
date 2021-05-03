@@ -27,7 +27,20 @@ It is a straight-forward process of configuring the folder as the root of a jeky
 
 ### Step 1: Create the _config.yml file
 
-what does Config.yml do
+`_config.yml` lives in the root folder of your project. It is the overall config file for your Jekyll site.
+
+Example: basic `_config.yml` file
+
+```yml
+title: Your Site
+email: me@email.com
+description: >-
+  This is the description for my site
+baseurl: ""
+url: "https://www.chrishasz.com"
+favicon: /images/favicon.jpg
+logo: /images/favicon.jpg
+```
 
 ### Step 2: Create the gemspec file
 
