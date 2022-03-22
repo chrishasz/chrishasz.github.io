@@ -29,30 +29,23 @@ It is a straight-forward process of configuring the folder as the root of a jeky
 
 `_config.yml` lives in the root folder of your project. It is the overall config file for your Jekyll site.
 
-Example: basic `_config.yml` file
-
-```yml
-title: Your Site
-email: me@email.com
-description: >-
-  This is the description for my site
-baseurl: ""
-url: "https://www.chrishasz.com"
-favicon: /images/favicon.jpg
-logo: /images/favicon.jpg
-```
+[Example](#config)
 
 ### Step 2: Create the gemspec file
 
-what does gemspec do
+The `.gemspec` file defines properties for your rubygem, including gem name, author, and contact info.
+
+[Example](#.gemspec)
 
 ### Step 3: Create the Gemfile
 
-what does Gemfile do
+The `Gemfile` file defines properties for your rubygem, including gem name, author, and contact info.
+
+[Example](#gemfile)
 
 ### Step 4: Generate the gemfile.lock
 
- `bundle install` - This will create the gemfile.lock file, which describes all of the dependencies needed to run this project. It is considered best practice to check this file into GitHub so that others are able to build and run the site in an identical ruby environment.
+ run `bundle install` - This will create the gemfile.lock file, which describes all of the dependencies needed to run this project. It is considered best practice to check this file into GitHub so that others are able to build and run the site in an identical ruby environment.
 
 ### Step 5: Build and run the site Locally
 
@@ -64,10 +57,9 @@ once you have the files configured, you can launch the site by navigating to the
 
 ## Example: Using the yaght theme for GitHub
 
+### Page Level [#](#page){:name="page"}
 
-
-
-### Sample _config.yml
+### Sample _config.yml [#](#config){:name="config"}
 
 ```yml
 title: <Site Name>
@@ -81,11 +73,11 @@ logo: /images/favicon.jpg
 
 #Social [jekyll-seo-tag]
 social:
-  name: chrishasz
+  name: <social-name>
   links:
-    - https://twitter.com/<twitter_username>
-    - https://www.linkedin.com/in/<linkedin_username>
-    - https://github.com/<github_username>
+    - https://twitter.com/<twitter-username>
+    - https://www.linkedin.com/in/<linkedin-username>
+    - https://github.com/<github-username>
 twitter:
   username: <twitter_username>
   card: summary
@@ -106,9 +98,9 @@ minima:
 
   # generate social links in footer
   social_links:
-    github:  <github_username>
-    linkedin: <linkedin_username>
-    twitter: <twitter_username>
+    github:  <github-username>
+    linkedin: <linkedin-username>
+    twitter: <twitter-username>
     rss: rss
 
 # Build settings
@@ -117,7 +109,7 @@ remote_theme: chrishasz/yaght
 
 ```
 
-### Sample Gemfile
+### Sample Gemfile [#](#gemfile){:name="gemfile"}
 
 ```Gemfile
     source "https://rubygems.org"
@@ -142,22 +134,22 @@ remote_theme: chrishasz/yaght
     gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 ```
 
-### Sample .gemspec
+### Sample .gemspec [#](#gemspec){:name="gemspec"}
 
-```GemSpec
+```gemspec
    # frozen_string_literal: true
 
     Gem::Specification.new do |spec|
-        spec.name          = "<project_name>"
+        spec.name          = "<project-name>"
         spec.version       = "0.1.0"
-        spec.authors       = ["<your_name>"]
+        spec.authors       = ["<your-name>"]
         spec.email         = ["<you>@<domain>.<tld>"]
 
         spec.summary       = "<Project description>"
         spec.homepage      = "<url of site>"
         spec.license       = "MIT"
 
-        spec.metadata["plugin_type"] = "theme"
+        spec.metadata["plugin-type"] = "theme"
 
         spec.files = `git ls-files -z`.split("\x0").select do |f|
             f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
