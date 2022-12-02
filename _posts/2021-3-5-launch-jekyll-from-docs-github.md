@@ -131,6 +131,8 @@ remote_theme: chrishasz/yaght
 
 ### Sample .gemspec
 
+This is optional. You can either create a blank GemSpec file, or use the template below.
+
 ```GemSpec
    # frozen_string_literal: true
 
@@ -158,7 +160,7 @@ remote_theme: chrishasz/yaght
 
 ```
 
-You can read more about yaght configuration in the [yaght documentation](https://www.chrishasz.com/yaght/general/getting-started-with-yaght).
+You can read more about yaght configuration in the [yaght documentation](https://www.chrishasz.com/yaght/).
 
 ## Summary and Take-aways
 
